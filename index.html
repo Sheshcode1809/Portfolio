@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of Shesh Chetan Kanade — Enthusiastic AI Engineer specializing in Generative AI, Machine Learning, and AI for Manufacturing." />
+  <title>Shesh Kanade | AI Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">SK<span class="logo-dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <span class="sun-icon">☀️</span>
+          <span class="moon-icon">🌙</span>
+        </button>
+        <a href="#contact" class="btn btn-primary nav-cta">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting reveal">👋 Hello, I'm</p>
+      <h1 class="hero-name reveal">Shesh Kanade</h1>
+      <div class="hero-tagline reveal">
+        <span>I build </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor">|</span>
+      </div>
+      <p class="hero-desc reveal">An enthusiastic AI Engineer open to working on AI projects like Generative AI,
+        OpenAI integrations, and AI for Manufacturing. I use Python to create and train machine learning models
+        that meet real-world expectations and increase productivity.</p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="resume.pdf" class="btn btn-outline" download>Download CV ↓</a>
+      </div>
+      <div class="hero-scroll reveal">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-wrapper">
+        <div class="avatar-ring"></div>
+        <div class="avatar-ring ring-2"></div>
+        <img src="avatar.jpg" alt="Shesh Kanade" class="avatar-img"
+          onerror="this.style.display='none'; document.querySelector('.avatar-placeholder').style.display='flex'" />
+        <div class="avatar-placeholder">SK</div>
+        <div class="floating-badge badge-1">✨ Available</div>
+        <div class="floating-badge badge-2">🤖 AI Engineer</div>
+        <div class="floating-badge badge-3">🐍 Python Dev</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-tag reveal">About Me</div>
+      <h2 class="section-title reveal">Who I Am</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm <strong>Shesh Chetan Kanade</strong>, an enthusiastic <strong>AI Engineer</strong> passionate about
+            building intelligent systems that solve real-world problems. I'm currently pursuing my B.E. in Computer
+            Science and Engineering at Sal Institute of Technology and Engineering Research.</p>
+          <p>I'm open to working on exciting AI projects — from Generative AI and OpenAI integrations to AI solutions
+            for Manufacturing. I believe AI is the future and I'm committed to mastering it to meet client expectations
+            and drive meaningful productivity gains.</p>
+          <div class="about-info">
+            <div class="info-item"><span class="info-label">📧 Email</span><span>sheprial007@gmail.com</span></div>
+            <div class="info-item"><span class="info-label">📱 Phone</span><span>+91 84698 54712</span></div>
+            <div class="info-item"><span class="info-label">🎓 Degree</span><span>B.E. in Computer Science &
+                Engineering</span>
+            </div>
+            <div class="info-item"><span class="info-label">🏫 College</span><span>Sal Institute of Technology and
+                Engineering Research</span></div>
+            <div class="info-item"><span class="info-label">💼 Status</span><span class="available-badge">Available for
+                Work</span></div>
+            <div class="info-item"><span class="info-label">🌐 GitHub</span><span><a
+                  href="https://github.com/Sheshcode1809" target="_blank"
+                  style="color:var(--accent)">github.com/Sheshcode1809</a></span></div>
+            <div class="info-item"><span class="info-label">💼 LinkedIn</span><span><a
+                  href="https://www.linkedin.com/in/shesh-kanade-13b658395/" target="_blank"
+                  style="color:var(--accent)">linkedin.com/in/shesh-kanade</a></span></div>
+          </div>
+        </div>
+
+        <div class="stats-grid reveal">
+          <div class="stat-card">
+            <span class="stat-number" data-target="1">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="5">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Languages Known</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-tag reveal">My Stack</div>
+      <h2 class="section-title reveal">Skills &amp; Technologies</h2>
+
+      <div class="skills-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">AI / ML</button>
+        <button class="filter-btn" data-filter="backend">Programming</button>
+        <button class="filter-btn" data-filter="tools">Tools</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- AI / ML -->
+        <div class="skill-card reveal" data-category="frontend">
+          <div class="skill-icon">🤖</div>
+          <h4>Machine Learning</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="80"></div>
+          </div>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-card reveal" data-category="frontend">
+          <div class="skill-icon">✨</div>
+          <h4>Generative AI</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="78"></div>
+          </div>
+          <span class="skill-pct">78%</span>
+        </div>
+        <div class="skill-card reveal" data-category="frontend">
+          <div class="skill-icon">🧠</div>
+          <h4>Deep Learning / CNN</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="75"></div>
+          </div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-card reveal" data-category="frontend">
+          <div class="skill-icon">🏭</div>
+          <h4>AI for Manufacturing</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="72"></div>
+          </div>
+          <span class="skill-pct">72%</span>
+        </div>
+        <!-- Programming -->
+        <div class="skill-card reveal" data-category="backend">
+          <div class="skill-icon">🐍</div>
+          <h4>Python</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="88"></div>
+          </div>
+          <span class="skill-pct">88%</span>
+        </div>
+        <div class="skill-card reveal" data-category="backend">
+          <div class="skill-icon">🗄️</div>
+          <h4>SQL</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="75"></div>
+          </div>
+          <span class="skill-pct">75%</span>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card reveal" data-category="tools">
+          <div class="skill-icon">📊</div>
+          <h4>Streamlit</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="82"></div>
+          </div>
+          <span class="skill-pct">82%</span>
+        </div>
+        <div class="skill-card reveal" data-category="tools">
+          <div class="skill-icon">🗃️</div>
+          <h4>SQLite</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="75"></div>
+          </div>
+          <span class="skill-pct">75%</span>
+        </div>
+        <div class="skill-card reveal" data-category="tools">
+          <div class="skill-icon">🐙</div>
+          <h4>Git &amp; GitHub</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="80"></div>
+          </div>
+          <span class="skill-pct">80%</span>
+        </div>
+        <div class="skill-card reveal" data-category="tools">
+          <div class="skill-icon">📄</div>
+          <h4>PDF Report Generation</h4>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="72"></div>
+          </div>
+          <span class="skill-pct">72%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-tag reveal">Portfolio</div>
+      <h2 class="section-title reveal">Featured Projects</h2>
+
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="mobile">AI / ML</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal" data-category="mobile">
+          <div class="project-img">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+              <span>🏭</span>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Sheshcode1809" class="project-link" aria-label="GitHub" target="_blank">⭐ GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">CNN</span><span class="tag">Streamlit</span><span class="tag">SQLite</span>
+            </div>
+            <h3>Surface Defect Detection on Hot-Rolled Steel</h3>
+            <p>A Streamlit web application using a Convolutional Neural Network (CNN) to detect surface defects on
+              hot-rolled steel strips. Features user login, prediction history stored with SQLite, and PDF export of
+              results.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="mobile">
+          <div class="project-img">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+              <span>✨</span>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Sheshcode1809" class="project-link" target="_blank">⭐ GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Generative AI</span><span class="tag">Python</span><span class="tag">OpenAI</span>
+            </div>
+            <h3>Generative AI Project</h3>
+            <p>Exploring and building with Generative AI technologies. Leverages OpenAI APIs and Python to create
+              intelligent content generation pipelines for practical use cases.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="mobile">
+          <div class="project-img">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+              <span>🏭</span>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Sheshcode1809" class="project-link" target="_blank">⭐ GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">AI</span><span class="tag">Manufacturing</span><span class="tag">Python</span>
+            </div>
+            <h3>AI for Manufacturing</h3>
+            <p>Applied AI solutions for the manufacturing industry. Using machine learning models to optimize processes,
+              detect anomalies, and improve quality control in industrial settings.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+              <span>📊</span>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Sheshcode1809" class="project-link" target="_blank">⭐ GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">SQL</span>
+            </div>
+            <h3>Data Analysis Dashboard</h3>
+            <p>An interactive web dashboard built with Streamlit and Python for visualizing datasets and drawing
+              actionable insights, with SQL-backed data storage and querying.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-category="web">
+          <div class="project-img">
+            <div class="project-placeholder" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+              <span>🔐</span>
+            </div>
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Sheshcode1809" class="project-link" target="_blank">⭐ GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">PHP</span><span class="tag">SQL</span><span class="tag">JavaScript</span>
+            </div>
+            <h3>User Management Web App</h3>
+            <p>A full-featured web application with user authentication, session management, and database-driven
+              operations built using PHP, SQL, and JavaScript.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="section-tag reveal">Journey</div>
+      <h2 class="section-title reveal">Education &amp; Certifications</h2>
+
+      <div class="timeline-tabs reveal">
+        <button class="tab-btn active" data-tab="work">🎓 Education</button>
+        <button class="tab-btn" data-tab="education">🏅 Certifications</button>
+      </div>
+
+      <div class="timeline" id="work-timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023 – 2026 (Expected)</span>
+            <h3>Bachelor of Engineering (B.E.) — Computer Science &amp; Engineering</h3>
+            <h4>Sal Institute of Technology and Engineering Research</h4>
+            <p>Currently pursuing a B.E. in Computer Science and Engineering with a focus on Artificial Intelligence
+              and Machine Learning. Building strong foundations in Python, Deep Learning, and AI system design.</p>
+            <div class="timeline-tags">
+              <span class="tag">Computer Science</span><span class="tag">AI / ML</span><span class="tag">Python</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Pre-2023</span>
+            <h3>Diploma — Computer Science &amp; Engineering</h3>
+            <h4>Technical Institute</h4>
+            <p>Completed a Diploma in Computer Science and Engineering, gaining foundational knowledge in programming,
+              databases, and software development principles.</p>
+            <div class="timeline-tags">
+              <span class="tag">Diploma</span><span class="tag">CS Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline hidden" id="education-timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024</span>
+            <h3>Generative AI Certification</h3>
+            <h4>Professional Certification</h4>
+            <p>Certified in Generative AI technologies, covering large language models, prompt engineering,
+              OpenAI APIs, and practical application development using generative AI frameworks.</p>
+            <div class="timeline-tags">
+              <span class="tag">Generative AI</span><span class="tag">LLMs</span><span class="tag">OpenAI</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024</span>
+            <h3>AI for Manufacturing Certification</h3>
+            <h4>Professional Certification</h4>
+            <p>Specialized certification in applying AI and machine learning techniques to manufacturing processes,
+              including quality control, defect detection, and process optimization.</p>
+            <div class="timeline-tags">
+              <span class="tag">AI</span><span class="tag">Manufacturing</span><span class="tag">Industry 4.0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-tag reveal">Testimonials</div>
+      <h2 class="section-title reveal">What People Say</h2>
+
+      <div class="testimonial-carousel">
+        <div class="testimonial-track" id="testimTrack">
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Shesh is a dedicated AI engineer with a remarkable ability to understand complex problems and
+              translate them into intelligent solutions. His work on our ML pipeline was outstanding!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">CM</div>
+              <div>
+                <strong>College Mentor</strong>
+                <span>Faculty, Sal Institute of Technology</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"His Surface Defect Detection project was impressive — a real-world AI solution with
+              clean code, user authentication, and even PDF report export. Well-structured and highly practical!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">PR</div>
+              <div>
+                <strong>Project Reviewer</strong>
+                <span>AI/ML Evaluator</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Shesh's enthusiasm for AI and his commitment to learning new technologies make him an excellent
+              team member. He's proactive, detail-oriented, and always delivers beyond expectations."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">TL</div>
+              <div>
+                <strong>Team Lead</strong>
+                <span>Project Collaborator</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <button class="dot active" onclick="goToSlide(0)"></button>
+          <button class="dot" onclick="goToSlide(1)"></button>
+          <button class="dot" onclick="goToSlide(2)"></button>
+        </div>
+        <button class="carousel-btn prev" onclick="changeSlide(-1)">‹</button>
+        <button class="carousel-btn next" onclick="changeSlide(1)">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-tag reveal">Get In Touch</div>
+      <h2 class="section-title reveal">Let's Work Together</h2>
+      <p class="contact-subtitle reveal">Have an AI project in mind? I'd love to hear about it. Drop me a message!</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <span class="contact-icon">📧</span>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:sheprial007@gmail.com">sheprial007@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">📱</span>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+918469854712">+91 84698 54712</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">🐙</span>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/Sheshcode1809" target="_blank">github.com/Sheshcode1809</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <span class="contact-icon">💼</span>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/shesh-kanade-13b658395/" target="_blank">linkedin.com/in/shesh-kanade</a>
+            </div>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/Sheshcode1809" class="social-link" aria-label="GitHub" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/shesh-kanade-13b658395/" class="social-link" aria-label="LinkedIn" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </a>
+            <a href="mailto:sheprial007@gmail.com" class="social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
+            </a>
+            <a href="tel:+918469854712" class="social-link" aria-label="Phone">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Select a subject</option>
+              <option value="ai-project">AI Project</option>
+              <option value="job">Job Opportunity</option>
+              <option value="collab">Collaboration</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your AI project..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span>Send Message 🚀</span>
+          </button>
+          <div class="form-success hidden" id="formSuccess">
+            ✅ Message sent! I'll get back to you within 24 hours.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-logo">SK<span>.</span></p>
+        <p class="footer-copy">© 2026 Shesh Chetan Kanade. Built with ❤️ and lots of ☕</p>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
