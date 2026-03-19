@@ -24,6 +24,7 @@ window.addEventListener('scroll', () => {
 
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('open');
+  navbar.classList.toggle('menu-is-open');
 });
 
 navLinks.querySelectorAll('a').forEach(link => {

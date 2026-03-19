@@ -205,6 +205,32 @@ ul {
   transition: var(--transition);
 }
 
+.navbar:has(.nav-links.open) {
+  background: var(--bg-primary);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: fixed;
+    inset: 0;
+    top: 72px;
+    background: var(--bg-primary);
+    /* Ensures menu isn't transparent */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    z-index: 9998;
+    /* Just below the main nav bar */
+  }
+
+  /* Prevent scrolling when menu is open (optional but recommended) */
+  body:has(.nav-links.open) {
+    overflow: hidden;
+  }
+}
+
 .navbar.scrolled {
   background: var(--nav-blur);
   backdrop-filter: blur(20px);
